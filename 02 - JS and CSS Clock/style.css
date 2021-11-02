@@ -1,0 +1,74 @@
+html {
+    background: #cbb2be;
+    /* background-size: cover; */
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin-top: 100px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* min-height: 100vh; */
+    align-items: center;
+}
+header {
+    color: rgb(114, 106, 112);
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.clock-letter {
+    color: rgb(94, 82, 91);
+    font-size: 64px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 10px solid white;
+    border-radius: 50%;
+    margin: 10px auto;
+    position: relative;
+    padding: 3rem;
+    box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
+}
+
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* transform: translateY(-3px);  */
+    /* account for the height of the clock hands */
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: ease-in-out;
+}
+
+.hour-hand {
+    background-color: white;
+
+}
+.second-hand {
+    background: rgb(75, 74, 74);
+}
